@@ -1,8 +1,8 @@
+/* eslint-disable prettier/prettier */
 import IonicIcons from "@expo/vector-icons/Ionicons";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { Platform, TouchableOpacity } from "react-native";
-
 import { MapsScreen, NewPlaceScreen, PlaceDetailScreen, PlaceListScreen } from "../screens/index";
 import colors from "../utils/colors";
 
@@ -28,7 +28,7 @@ const PlacesNavigator = () => {
           title: "Direcciones",
           headerRight: () => (
             <TouchableOpacity onPress={() => navigation.navigate("NewPlace")}>
-              <IonicIcons name="add-circle-outline" size={25} color={colors.black} />
+              <IonicIcons name="add-circle-outline" size={30} color={colors.black} />
             </TouchableOpacity>
           ),
         })}
